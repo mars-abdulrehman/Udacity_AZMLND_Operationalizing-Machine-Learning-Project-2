@@ -19,107 +19,107 @@ In this project, I have performed basically 2 steps:
 
 #### 1. AutoML Run -  Create an AutoML run and create upload bank marketing dataset to be used for training classification model.
 
-![AutoML](screens/02 - Create Auto ML Run.png)
+![AutoML](screens/02.png)
 
-![image-1](screens/03 - Create Dataset.png)
+![image-1](screens/03.png)
 
-![image-2](screens/04 - Dataset - 2.png)
+![image-2](screens/04.png)
 
-![image-2](screens/05 - Dataset 3  - Upload from local.png)
+![image-2](screens/05.png)
 
-![image-2](screens/06-Dataset Settings.png)
+![image-2](screens/06.png)
 
-![image-2](screens/07- Dataset Created.png)
+![image-2](screens/07.png)
 
 I created the compute to run the AutoML experiment.
-![image-2](screens/08-AutoML Name and Create Compute.png)
+![image-2](screens/08.png)
 
-![image-2](screens/09-Compute Cluster.png)
+![image-2](screens/09.png)
 
-![image-2](screens/10-AuotML Configuration.png)
+![image-2](screens/10.png)
 
 AutoML experiment is RUN once I pressed Finish.
-![image-2](screens/11- AutoML Run.png)
+![image-2](screens/11.png)
 
-![image-2](screens/12-Experiment is Running.png)
+![image-2](screens/12.png)
 
 #### 2. AutoML gave the best model as Voting Ensemble with an accuracy of 91.98%. I Deployed this model by pressing the Deploy button.
 
-![image](screens/13-Best Model.png)
+![image](screens/13.png)
 
-![image](screens/14-Deploy.png)
+![image](screens/14.png)
 
 Realtime endpoint is created.
-![image](screens/15-Endpoint.py)
+![image](screens/15.py)
 
 Next I enabled application insights by running the log file.
-![image](screens/16-log file.png)
+![image](screens/16.png)
 
-![image](screens/17-run logs.py file.png)
+![image](screens/17.py file.png)
 
 Model explainer is enables once the file is run.
-![image](screens/17-run logs18-Model Explainer enabled.png)
+![image](screens/18.png)
 
-![image](screens/19-logs file.png)
+![image](screens/19.png)
 
 #### 3. Next I ran the swagger.sh and serve.py scripts to display the swagger documentation.
-![image](screens/20- run swagger.png)
+![image](screens/20.png)
 
 Check swagger is running.
-![image](screens/21-check swagger is running.png)
+![image](screens/21.png)
 
-![image](screens/22-run serve file.png)
+![image](screens/22.png)
 
 #### 4. Consume Model Endpoint and Run benchmark.
 By running the endpoint.py script and providing the data in correct format.
 
-![image](screens/23- run endpoints file.png)
+![image](screens/23.png)
 
 Run the apache benchmark to gauge the performance of endpoint.
-![image](screens/24 - Run Benchmark.png)
+![image](screens/24.png)
 
 #### 5. Run the Azure SDK pipeline to automate the training and deployment steps.
 Create and submit a pipeline run with AutoML step using Azure SDK.
-![image](screens/250-Create and submit pipeline.png)
+![image](screens/250.png)
 
 We can see the pipeline run un Azure ML studio.
-![image](screens/25-Pipeline Running in Azure ML studio.png)
+![image](screens/25.png)
 
-![image](screens/26-Pipeline running.png)
+![image](screens/26.png)
 
-![image](screens/29-pipeline running.png)
+![image](screens/29.png)
 
-![image](screens/27-pipeline run finished.png)
+![image](screens/27.png)
 
 Pipeline execution in run details widget.
-![image](screens/28-run details.png)
+![image](screens/28.png)
 
-![image](screens/30- pipeline run widget.png)
+![image](screens/30.png)
 
-![image](screens/31-Dataset and AutoML.png)
+![image](screens/31.png)
 
 Test the best model before publishing it.
-![image](screens/251-test best model.png)
+![image](screens/251.png)
 
 
 #### 5. Consume the best model with REST endpoint.
 
 Next I published and created REST endpoint to consume the best model.
-![image](screens/32 - Rest Endpoint.png)
+![image](screens/32.png)
 
-![image](screens/33 - http request to endpoint.png)
+![image](screens/33.png)
 
-![image](screens/34 - Pipeline rest endpint.png)
+![image](screens/34.png)
 
 Rest endpoint is active.
-![image](screens/35-Pipeline Runs.png)
+![image](screens/35.png)
 
-![image](screens/36 - Pipeline Endpoint.png)
+![image](screens/36.png)
 
-![image](screens/37- Pipeline rest endpint.png)
+![image](screens/37.png)
 
 Endpoint is running and can be seen using RunDetails widget as well.
-![image](screens/38- running.png)
+![image](screens/38.png)
 
 # Standout Suggestions
 1. Increase the AutoML executions time to allow Azure to find other algorithms with better accuracy.
